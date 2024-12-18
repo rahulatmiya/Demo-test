@@ -3,19 +3,21 @@ import "./styles.css";
 const name = "Rahul";              // Assign "Rahul" to name
 
 const DateComponent = () => {
-    const currentDate = new Date(2024,1,12,19);  // Create the Date object
+    const currentDate = new Date(2024,1,12,11);  // Create the Date object
     const year = currentDate.getFullYear();  // Get the full year
     const hours=currentDate.getHours();
     let greeting = hours < 12 ? "Good Morning" : hours < 18 ? "Good Afternoon" : "Good Evening";
     console.log(greeting)
-    let custom;
+    let custom={
+        color:""
+    };
   
     if (greeting=="Good Morning")
-        {custom.style="Red";}
+        {custom.color="Red";}
   else if (greeting=="Good Afternoon")
-    {custom.style="Green";} 
+    {custom.color="Green";} 
   else 
-  { custom.style="Blue";}
+  { custom.color="Blue";}
 
 
     return (    
