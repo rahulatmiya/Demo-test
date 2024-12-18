@@ -1,24 +1,20 @@
 import React from 'react';
 import "./styles.css";
-let name;
-let nyear;
-let year;
+const name = "Rahul";              // Assign "Rahul" to name
 
-name = "Rahul";              // Assign "Rahul" to name
-nyear = new Date();          // Get the current date and time
-year = nyear.getFullYear();  // Get the current year
-console.log(year);           // Output the current year, e.g., 2024
+const DateComponent = () => {
+    const currentDate = new Date();  // Create the Date object
+    const year = currentDate.getFullYear();  // Get the full year
+  
+    return (
+        <div className="Date">
+          <footer>
+          <h5> create by {name} </h5>
+          <h6> copyright {year} </h6>
+          </footer>
+        </div>
+      );
+  };
 
-// document.getElementById("year").textContent = dateelements;
+export default DateComponent ;
 
-
-export default function Date() {
-  return (
-    <div className="Date">
-      <footer>
-      <h5> create by {name} </h5>
-      <h6> copyright {year} </h6>
-      </footer>
-    </div>
-  );
-}
