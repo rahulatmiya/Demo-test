@@ -8,3 +8,16 @@
   .Date{
     text-align: center;
   }
+  .foot{
+    color: blue;
+  }
+
+  .paragraph{
+    border: 2cm;
+   text-decoration-color: bisque;
+    border-color: rgb(16, 15, 15);
+    font-weight: 300;
+    font-style: italic;
+    padding: 2px 6px;
+
+  }
